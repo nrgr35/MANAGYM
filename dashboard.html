@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gym Management | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">G</div>
+
+            <div class="brand-text">
+                <strong>GymManager</strong>
+                <span>Management</span>
+            </div>
+        </div>
+
+
+        <nav class="navigation">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">♙</span>
+                <span>Members</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Attendance</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">₹</span>
+                <span>Fees</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Plans</span>
+            </a>
+
+
+            <p class="nav-label secondary-label">MANAGEMENT</p>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>Notifications</span>
+
+                <span class="nav-badge">5</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▥</span>
+                <span>Reports</span>
+            </a>
+
+
+            <p class="nav-label secondary-label">SYSTEM</p>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="gym-mini-profile">
+                <div class="gym-avatar">PF</div>
+
+                <div>
+                    <strong>PowerFit Gym</strong>
+                    <span>Administrator</span>
+                </div>
+
+                <button class="more-button">•••</button>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="page-title">
+                <h1>Dashboard</h1>
+                <p>Friday, 25 September 2026</p>
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="text"
+                        id="globalSearch"
+                        placeholder="Search members..."
+                    >
+                    <kbd>⌘ K</kbd>
+                </div>
+
+
+                <button
+                    class="icon-button notification-button"
+                    id="notificationButton"
+                    aria-label="Notifications"
+                >
+                    <span>◉</span>
+                    <i></i>
+                </button>
+
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        AM
+                    </div>
+
+                    <div class="user-info">
+                        <strong>Admin Manager</strong>
+                        <span>Gym Manager</span>
+                    </div>
+
+                    <span class="profile-arrow">⌄</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <section class="dashboard-content">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome-section">
+
+                <div>
+                    <h2>Good morning, Admin</h2>
+
+                    <p>
+                        Here's what's happening at PowerFit Gym today.
+                    </p>
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <button class="secondary-button">
+                        <span>+</span>
+                        Add Member
+                    </button>
+
+                    <button class="primary-button">
+                        <span>✓</span>
+                        Mark Attendance
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 STAT CARDS
+            ================================================== -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Total Members</span>
+
+                        <div class="stat-icon neutral">
+                            ♙
+                        </div>
+                    </div>
+
+                    <div class="stat-value">
+                        248
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="positive">↑ 8.2%</span>
+                        <span>from last month</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Active Members</span>
+
+                        <div class="stat-icon success">
+                            ✓
+                        </div>
+                    </div>
+
+                    <div class="stat-value">
+                        221
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="positive">89.1%</span>
+                        <span>of total members</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card warning-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Fees Due</span>
+
+                        <div class="stat-icon warning">
+                            ₹
+                        </div>
+                    </div>
+
+                    <div class="stat-value">
+                        17
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="warning-text">Needs attention</span>
+                        <span>this month</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Today's Attendance</span>
+
+                        <div class="stat-icon blue">
+                            ✓
+                        </div>
+                    </div>
+
+                    <div class="stat-value">
+                        96<span class="percentage">%</span>
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="positive">↑ 3.4%</span>
+                        <span>vs. yesterday</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CHART + FEE STATUS
+            ================================================== -->
+
+            <div class="two-column-grid">
+
+
+                <!-- ATTENDANCE -->
+
+                <section class="panel attendance-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Attendance Overview</h3>
+                            <p>Member attendance over the last 7 days</p>
+                        </div>
+
+                        <select id="attendancePeriod">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>This month</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart-container">
+
+                        <div class="y-axis">
+                            <span>100%</span>
+                            <span>75%</span>
+                            <span>50%</span>
+                            <span>25%</span>
+                            <span>0%</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-line line-100"></div>
+                            <div class="grid-line line-75"></div>
+                            <div class="grid-line line-50"></div>
+                            <div class="grid-line line-25"></div>
+                            <div class="grid-line line-0"></div>
+
+                            <svg
+                                class="attendance-chart"
+                                viewBox="0 0 700 220"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+                                    <linearGradient
+                                        id="attendanceFill"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity="0.14"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"
+                                        />
+                                    </linearGradient>
+                                </defs>
+
+                                <path
+                                    class="chart-fill"
+                                    d="
+                                    M 0 78
+                                    L 116 62
+                                    L 233 91
+                                    L 350 51
+                                    L 466 67
+                                    L 583 43
+                                    L 700 55
+                                    L 700 220
+                                    L 0 220
+                                    Z
+                                    "
+                                />
+
+                                <path
+                                    class="chart-line"
+                                    d="
+                                    M 0 78
+                                    L 116 62
+                                    L 233 91
+                                    L 350 51
+                                    L 466 67
+                                    L 583 43
+                                    L 700 55
+                                    "
+                                />
+
+                                <circle cx="0" cy="78" r="4"></circle>
+                                <circle cx="116" cy="62" r="4"></circle>
+                                <circle cx="233" cy="91" r="4"></circle>
+                                <circle cx="350" cy="51" r="4"></circle>
+                                <circle cx="466" cy="67" r="4"></circle>
+                                <circle cx="583" cy="43" r="4"></circle>
+                                <circle cx="700" cy="55" r="4"></circle>
+
+                            </svg>
+
+
+                            <div class="chart-labels">
+                                <span>Sat</span>
+                                <span>Sun</span>
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- FEE STATUS -->
+
+                <section class="panel fee-status-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h3>Fee Status</h3>
+                            <p>Current membership payments</p>
+                        </div>
+
+                        <button class="text-button">
+                            View all
+                        </button>
+
+                    </div>
+
+
+                    <div class="fee-summary">
+
+                        <div class="fee-total">
+                            <strong>248</strong>
+                            <span>members</span>
+                        </div>
+
+
+                        <div class="fee-row">
+
+                            <div class="fee-label">
+                                <span class="status-dot paid"></span>
+                                <span>Paid</span>
+                            </div>
+
+                            <strong>221</strong>
+
+                        </div>
+
+
+                        <div class="fee-row">
+
+                            <div class="fee-label">
+                                <span class="status-dot expiring"></span>
+                                <span>Expiring soon</span>
+                            </div>
+
+                            <strong>12</strong>
+
+                        </div>
+
+
+                        <div class="fee-row">
+
+                            <div class="fee-label">
+                                <span class="status-dot due"></span>
+                                <span>Payment due</span>
+                            </div>
+
+                            <strong>9</strong>
+
+                        </div>
+
+
+                        <div class="fee-row">
+
+                            <div class="fee-label">
+                                <span class="status-dot overdue"></span>
+                                <span>Overdue</span>
+                            </div>
+
+                            <strong>5</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fee-progress">
+
+                        <div
+                            class="progress-paid"
+                            style="width: 89%"
+                        ></div>
+
+                        <div
+                            class="progress-expiring"
+                            style="width: 5%"
+                        ></div>
+
+                        <div
+                            class="progress-due"
+                            style="width: 3%"
+                        ></div>
+
+                        <div
+                            class="progress-overdue"
+                            style="width: 3%"
+                        ></div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- =================================================
+                 RECENT ATTENDANCE
+            ================================================== -->
+
+            <section class="panel table-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Recent Attendance</h3>
+                        <p>Members who checked in today</p>
+                    </div>
+
+                    <button class="text-button">
+                        View attendance
+                    </button>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Member</th>
+                                <th>Plan</th>
+                                <th>Check-in</th>
+                                <th>Attendance</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-one">
+                                            RS
+                                        </div>
+
+                                        <div>
+                                            <strong>Rahul Sharma</strong>
+                                            <span>ID #PS1024</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Monthly</td>
+
+                                <td>07:42 AM</td>
+
+                                <td>92%</td>
+
+                                <td>
+                                    <span class="status-pill present">
+                                        Present
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="row-action">•••</button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-two">
+                                            AP
+                                        </div>
+
+                                        <div>
+                                            <strong>Anjali Patil</strong>
+                                            <span>ID #PS1087</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Quarterly</td>
+
+                                <td>08:03 AM</td>
+
+                                <td>87%</td>
+
+                                <td>
+                                    <span class="status-pill present">
+                                        Present
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="row-action">•••</button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-three">
+                                            SK
+                                        </div>
+
+                                        <div>
+                                            <strong>Sneha Kulkarni</strong>
+                                            <span>ID #PS1112</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Monthly</td>
+
+                                <td>08:27 AM</td>
+
+                                <td>95%</td>
+
+                                <td>
+                                    <span class="status-pill present">
+                                        Present
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="row-action">•••</button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-four">
+                                            VJ
+                                        </div>
+
+                                        <div>
+                                            <strong>Vikram Joshi</strong>
+                                            <span>ID #PS1048</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Monthly</td>
+
+                                <td>09:11 AM</td>
+
+                                <td>74%</td>
+
+                                <td>
+                                    <span class="status-pill present">
+                                        Present
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="row-action">•••</button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 FEE FOLLOW UPS
+            ================================================== -->
+
+            <section class="panel table-panel followup-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Fee Follow-ups</h3>
+                        <p>Members requiring attention</p>
+                    </div>
+
+                    <button class="text-button">
+                        View all
+                    </button>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Member</th>
+                                <th>Fee</th>
+                                <th>Expired</th>
+                                <th>Reminders</th>
+                                <th>Last Reminder</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-five">
+                                            AJ
+                                        </div>
+
+                                        <div>
+                                            <strong>Amit Joshi</strong>
+                                            <span>Monthly Plan</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>₹1,500</td>
+
+                                <td>
+                                    <span class="overdue-days">
+                                        5 days
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="reminder-count">
+                                        <span class="reminder active"></span>
+                                        <span class="reminder active"></span>
+                                        <span class="reminder"></span>
+                                    </div>
+
+                                </td>
+
+                                <td>24 Sep 2026</td>
+
+                                <td>
+                                    <button class="followup-button">
+                                        Follow up
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-six">
+                                            RM
+                                        </div>
+
+                                        <div>
+                                            <strong>Rohit Mehta</strong>
+                                            <span>Monthly Plan</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>₹1,500</td>
+
+                                <td>
+                                    <span class="overdue-days">
+                                        3 days
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="reminder-count">
+                                        <span class="reminder active"></span>
+                                        <span class="reminder"></span>
+                                        <span class="reminder"></span>
+                                    </div>
+
+                                </td>
+
+                                <td>23 Sep 2026</td>
+
+                                <td>
+                                    <button class="followup-button">
+                                        Follow up
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="member-cell">
+
+                                        <div class="member-avatar avatar-seven">
+                                            NK
+                                        </div>
+
+                                        <div>
+                                            <strong>Neha Kapoor</strong>
+                                            <span>Quarterly Plan</span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>₹3,500</td>
+
+                                <td>
+                                    <span class="due-days">
+                                        1 day
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="reminder-count">
+                                        <span class="reminder active"></span>
+                                        <span class="reminder"></span>
+                                        <span class="reminder"></span>
+                                    </div>
+
+                                </td>
+
+                                <td>25 Sep 2026</td>
+
+                                <td>
+                                    <button class="followup-button">
+                                        Follow up
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     NOTIFICATION PANEL
+========================================================= -->
+
+<div class="notification-panel" id="notificationPanel">
+
+    <div class="notification-header">
+
+        <div>
+            <h3>Notifications</h3>
+            <span>5 items require attention</span>
+        </div>
+
+        <button id="closeNotifications">×</button>
+
+    </div>
+
+
+    <div class="notification-list">
+
+        <div class="notification-item urgent">
+
+            <div class="notification-icon">
+                !
+            </div>
+
+            <div>
+                <strong>Amit Joshi requires follow-up</strong>
+                <p>Second fee reminder has already been sent.</p>
+                <span>15 minutes ago</span>
+            </div>
+
+        </div>
+
+
+        <div class="notification-item">
+
+            <div class="notification-icon">
+                ₹
+            </div>
+
+            <div>
+                <strong>5 memberships expired</strong>
+                <p>These members have outstanding payments.</p>
+                <span>1 hour ago</span>
+            </div>
+
+        </div>
+
+
+        <div class="notification-item">
+
+            <div class="notification-icon">
+                !
+            </div>
+
+            <div>
+                <strong>12 memberships expire soon</strong>
+                <p>Members are within their reminder period.</p>
+                <span>2 hours ago</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
